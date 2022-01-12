@@ -1,4 +1,4 @@
-const Intern= require('../intern');
+const Intern= require('../src/intern.js');
 const alice = new Intern("alice",1,"alice@gmail.com","UofA");
 
 describe('school',() =>{

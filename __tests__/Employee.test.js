@@ -1,4 +1,4 @@
-const Employee= require('../employee');
+const Employee= require('../src/employee.js')
 const alice = new Employee("alice",1,"alice@gmail.com")
 
 describe('name',() =>{

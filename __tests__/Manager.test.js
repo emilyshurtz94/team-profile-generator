@@ -1,4 +1,4 @@
-const Manager= require('../manager');
+const Manager= require('../src/manager.js');
 const alice = new Manager("alice",1,"alice@gmail.com",2)
 
 describe('getOfficeNumber',() =>{

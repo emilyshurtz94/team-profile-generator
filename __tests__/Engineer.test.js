@@ -1,4 +1,4 @@
-const Engineer= require('../engineer');
+const Engineer= require('../src/engineer.js');
 const alice = new Engineer("alice",1,"alice@gmail.com","alicegithub")
 
 describe('github',() =>{
