@@ -7,7 +7,7 @@ class Intern extends Employee{
         this.school= school
     }    
         getSchool(){
-        this.school
+        return this.school
         }
 
       getRole =()=> {

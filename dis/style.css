@@ -1,0 +1,31 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.jumbotron {
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgb(13, 92, 228);
+    justify-content: center;
+    padding:50px;
+    display:block;
+    text-decoration-color: black;
+
+}
+.card {
+    border-radius: 25px;
+    border-color:black;
+    border-width: 5px;
+    text-align: center;
+    margin:30px;
+    text-align: start;
+}
+.card header{
+    background-color: blue;
+}
+.card h1{
+    font-size: 50px;
+}
+
+.card h2{
+    font-size: 30px;
+}
