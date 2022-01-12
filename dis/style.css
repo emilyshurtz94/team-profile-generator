@@ -1,6 +1,7 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .jumbotron {
     text-align: center;
     text-decoration: underline;
@@ -9,23 +10,42 @@
     padding:50px;
     display:block;
     text-decoration-color: black;
-
 }
-.card {
+
+.manager-card {
     border-radius: 25px;
     border-color:black;
-    border-width: 5px;
+    border-width: 10px;
     text-align: center;
     margin:30px;
     text-align: start;
 }
-.card header{
+.card-header{
     background-color: blue;
+    border-radius: 25px;
 }
-.card h1{
+.card-title{
     font-size: 50px;
 }
 
-.card h2{
+.card-text{
     font-size: 30px;
+}
+
+.intern-card {
+    border-radius: 25px;
+    border-color:black;
+    border-width: 10px;
+    text-align: center;
+    margin:30px;
+    text-align: start;
+}
+
+.engineer-card {
+    border-radius: 25px;
+    border-color:black;
+    border-width: 10px;
+    text-align: center;
+    margin:30px;
+    text-align: start;
 }

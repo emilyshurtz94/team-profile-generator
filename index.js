@@ -23,29 +23,6 @@ const generateHTML = (employee) => {
       </div>
       </div>`
     }
-    const generateIntern = (intern) => {
-        const tempArray = []
-        for (let i = 0; i < intern.length; i++) {
-
-            const internEl = `<div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="intern-card" style="width: 18rem;">
-            <div class="card-header">
-            <h1 class="card-title">${intern[i].name}</h1>
-            <h2 class="card-text">${intern[i].getRole()}</h2>
-            </div>
-      <div class="card-body">
-          <ul class="list-group list-group-flush">
-                <li class="list-group-item">ID ${intern[i].id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${intern[i].email}">${intern[i].email}</a></li>
-                <li class="list-group-item">School: ${intern[i].school}</li>
-          </ul>
-      </div>
-      </div>
-      </div>`
-            tempArray.push(internEl)
-        }
-        return tempArray.join(" ")
-    }
     const generateEngineer = (engineer) => {
         const tempArray = []
         for (let i = 0; i < engineer.length; i++) {
@@ -69,6 +46,29 @@ const generateHTML = (employee) => {
         }
         return tempArray.join(" ")
     }
+    const generateIntern = (intern) => {
+        const tempArray = []
+        for (let i = 0; i < intern.length; i++) {
+
+            const internEl = `<div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="intern-card" style="width: 18rem;">
+            <div class="card-header">
+            <h1 class="card-title">${intern[i].name}</h1>
+            <h2 class="card-text">${intern[i].getRole()}</h2>
+            </div>
+      <div class="card-body">
+          <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID ${intern[i].id}</li>
+                <li class="list-group-item">Email: <a href="mailto:${intern[i].email}">${intern[i].email}</a></li>
+                <li class="list-group-item">School: ${intern[i].school}</li>
+          </ul>
+      </div>
+      </div>
+      </div>`
+            tempArray.push(internEl)
+        }
+        return tempArray.join(" ")
+    }
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -76,7 +76,7 @@ const generateHTML = (employee) => {
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="dis/style.css">
+      <link rel="stylesheet" href="style.css">
       <title>Team Profile</title>
 </head>
 <body>
@@ -87,8 +87,8 @@ const generateHTML = (employee) => {
     </div>
     <div class="card-group">
     ${generateManager(employee[0])}
-    ${generateIntern(employee.filter(intern => (intern.getRole() === "Intern")))}
     ${generateEngineer(employee.filter(engineer => (engineer.getRole() === "Engineer")))}
+    ${generateIntern(employee.filter(intern => (intern.getRole() === "Intern")))}
     </div>
 </body>
 </html>`
